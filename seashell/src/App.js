@@ -9,7 +9,7 @@
 import React from 'react';
 import { Root } from 'native-base';
 import { Provider } from "mobx-react";
-import store from "~store";
+import store from "@store";
 import AppNavigation from '~navigation'
 import '~assets/styles'
 

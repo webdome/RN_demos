@@ -41,7 +41,7 @@
     "paths": {
       "~assets/*": ["src/Assets/*"],
       "~api/*": ["src/Api/*"],
-      "~store/*": ["src/Store/*"],
+      "@store/*": ["src/Store/*"],
       "~components/*": ["src/Components/*"],
       "~config/*": ["src/Config/*"],
       "~navigation/*": ["src/Navigation/*"],

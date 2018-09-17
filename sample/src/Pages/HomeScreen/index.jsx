@@ -1,25 +1,16 @@
-import React, { PureComponent } from 'react';
-import { View, StyleSheet, Text } from "react-native";
-import { fetchBanner } from '~api'
-import MobxTest from "./components/mobx-test";
+import React, { PureComponent } from "react";
+import { View, Text, Button, StyleSheet } from "react-native";
 
 export default class HomeScreen extends PureComponent {
-  componentDidMount(){
-    this._getBanner()
-  }
-  async _getBanner(){
-    let {data} = await fetchBanner({
-      bannerNumber: 5,
-      floatNumber: 1
-    })
-    console.log(data);
-    
-  }
   render() {
     return (
       <View style={styles.container}>
-      <Text onPress={()=>{this.props.navigation.push('Detail')}}> go Detail </Text>
-        <MobxTest></MobxTest>
+        <Text style={styles.welcome}>HomeScreen</Text>
+        <Button
+          style={styles.instructions}
+          title="GO Calculate"
+          onPress={() => this.props.navigation.navigate("Detail",{name:'Calculate'})}
+        />
       </View>
     );
   }
@@ -28,6 +19,18 @@ export default class HomeScreen extends PureComponent {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#F5FCFF",
+    justifyContent: "center",
+    alignItems: "center",
+    backgroundColor: "#F5FCFF"
+  },
+  welcome: {
+    fontSize: 20,
+    textAlign: "center",
+    margin: 10
+  },
+  instructions: {
+    textAlign: "center",
+    color: "#333333",
+    marginBottom: 5
   }
 });

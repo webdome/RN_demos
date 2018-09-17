@@ -1,5 +1,5 @@
-import HomeStore from './Models/HomeStore';
+import DetailStore from './models/DetailStore';
 
 export default {
-  HomeStore
+  DetailStore
 }
