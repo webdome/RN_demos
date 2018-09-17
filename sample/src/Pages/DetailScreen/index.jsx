@@ -1,23 +1,23 @@
 import React, {Component} from 'react';
 import { View, Text, StyleSheet, Button } from 'react-native';
-// import { observer, inject } from 'mobx-react';
+import { observer, inject } from 'mobx-react';
 
-// @inject(['DetailStore'])
-// @observer
+@inject(['DetailStore'])
+@observer
 export default class DetailScreen extends Component {
   constructor(props){
     super(props)
-    // this.store = this.props.DetailStore
+    this.store = this.props.DetailStore
   }
   render(){
-    // let { num } = this.store
+    let { num } = this.store
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>DetailScreen</Text>
         <View style={styles.calculate}>
-          {/* <Button title='-' onPress={()=>this.store.minus()}></Button> */}
-          {/* <Text style={styles.num}>{num}</Text> */}
-          {/* <Button title='+' onPress={()=>this.store.plus()}></Button> */}
+          <Button title='-' onPress={()=>this.store.minus()}></Button>
+          <Text style={styles.num}>{num}</Text>
+          <Button title='+' onPress={()=>this.store.plus()}></Button>
         </View>
       </View>
     )
