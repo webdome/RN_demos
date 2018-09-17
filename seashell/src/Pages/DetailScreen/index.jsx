@@ -1,6 +1,6 @@
 import React from "react";
 import { View, Text, Button } from "react-native";
-import { DeviceStorage } from "~config/utils";
+import { DeviceStorage } from "../../Config/utils";
 import {observer,inject} from 'mobx-react';
 
 

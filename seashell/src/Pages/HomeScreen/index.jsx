@@ -9,12 +9,12 @@ import {
 import { pxToDp } from "../../Config/utils";
 import Swiper from "react-native-swiper";
 import { $post } from "../../Config/fetch";
-import ScrollVertical from "~components/ScrollVertical";
+import ScrollVertical from "../../Components/ScrollVertical";
 import ScrollableTabView from "react-native-scrollable-tab-view";
 import NavTabBar from "./components/NavTabBar";
 import NavTabContent from "./components/NavTabContent";
 import styles from "./styles";
-import Loading from "~components/Loading";
+import Loading from "../../Components/Loading";
 
 class HomeScreen extends React.Component {
   constructor() {
