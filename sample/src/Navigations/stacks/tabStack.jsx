@@ -1,6 +1,6 @@
 import React from "react";
+import {Image} from 'react-native';
 import { createBottomTabNavigator } from "react-navigation";
-import { Icon } from "react-native-elements";
 import homeStack from "./homeStack";
 import meStack from "./meStack";
 
@@ -11,7 +11,7 @@ export default createBottomTabNavigator(
       navigationOptions: {
         tabBarLabel: "Home",
         tabBarIcon: ({ focused, tintColor }) => {
-          return <Icon name="apps" size={35} color={tintColor} />;
+          return <Image source={require('./images/home.png')} style={{width: 32, height: 32}}/>;
         }
       }
     },
@@ -20,7 +20,7 @@ export default createBottomTabNavigator(
       navigationOptions: {
         tabBarLabel: "Me",
         tabBarIcon: ({ focused, tintColor }) => {
-          return <Icon name="account-circle" size={35} color={tintColor} />;
+          return <Image source={require('./images/me.png')} style={{width: 32, height: 32}}/>;
         }
       }
     }

@@ -1,8 +1,4 @@
 {
   "presets": ["react-native"],
-  "plugins": [
-    ["@babel/plugin-proposal-decorators", {
-      "legacy": true
-    }]
-  ]
+  "plugins": ["transform-decorators-legacy"]
 }
