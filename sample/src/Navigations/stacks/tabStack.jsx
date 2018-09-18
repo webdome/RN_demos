@@ -11,7 +11,7 @@ export default createBottomTabNavigator(
       navigationOptions: {
         tabBarLabel: "Home",
         tabBarIcon: ({ focused, tintColor }) => {
-          return <Image source={require('./images/home.png')} style={{width: 32, height: 32}}/>;
+          return <Image source={require('./images/home.png')} style={{width: 24, height: 24}}/>;
         }
       }
     },
@@ -20,7 +20,7 @@ export default createBottomTabNavigator(
       navigationOptions: {
         tabBarLabel: "Me",
         tabBarIcon: ({ focused, tintColor }) => {
-          return <Image source={require('./images/me.png')} style={{width: 32, height: 32}}/>;
+          return <Image source={require('./images/me.png')} style={{width: 24, height: 24}}/>;
         }
       }
     }
