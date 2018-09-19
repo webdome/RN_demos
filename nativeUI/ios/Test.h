@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <React/RCTBridgeModule.h>
 
-@interface Test : NSObject
+@interface Test : NSObject<RCTBridgeModule> //必须实现这个协议
 
 @end
