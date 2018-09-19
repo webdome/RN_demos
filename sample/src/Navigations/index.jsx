@@ -1,6 +1,7 @@
 import { createStackNavigator } from "react-navigation";
 import tabStack from "./stacks/tabStack";
-import DetailScreen from '../Pages/DetailScreen';
+import CalculateScreen from '../Pages/CalculateScreen';
+import ScrollScreen from '../Pages/ScrollScreen';
 
 export default createStackNavigator(
   {
@@ -10,10 +11,16 @@ export default createStackNavigator(
         header: null
       },
     },
-    Detail: {
-      screen: DetailScreen,
+    Calculate: {
+      screen: CalculateScreen,
       navigationOptions: ({ navigation }) => ({
-        title: `${navigation.getParam('name','DetailScreen')}`,
+        title: `${navigation.getParam('name','CalculateScreen')}`,
+      }),
+    },
+    Scroll: {
+      screen: ScrollScreen,
+      navigationOptions: ({ navigation }) => ({
+        title: `${navigation.getParam('name','ScrollScreen')}`,
       }),
     },
   },{

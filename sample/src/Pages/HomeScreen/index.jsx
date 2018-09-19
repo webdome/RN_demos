@@ -9,7 +9,12 @@ export default class HomeScreen extends PureComponent {
         <Button
           style={styles.instructions}
           title="GO Calculate"
-          onPress={() => this.props.navigation.navigate("Detail",{name:'Calculate'})}
+          onPress={() => this.props.navigation.navigate("Calculate",{name:'Calculate'})}
+        />
+        <Button
+          style={styles.instructions}
+          title="GO ScrollView"
+          onPress={() => this.props.navigation.navigate("Scroll",{name:'ScrollView'})}
         />
       </View>
     );
